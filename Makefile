@@ -9,7 +9,7 @@ $(OUTPUT_NAME): $(SOURCES:%.cpp=$(BUILD_DIR)%.o)
 	g++ $(GXX_FLAGS) -o $@ $^
 
 $(SOURCES:%.cpp=$(BUILD_DIR)%.o): $(BUILD_DIR)%.o : %.cpp $(BUILD_DIR)
-	g++ $(GXX_FLAGS) -c -o $@ $(@:$(BUILD_DIR)%.o=%.cpp)
+	g++ $(GXX_FLAGS) -c -o $@ $<
 
 $(BUILD_DIR):
 	mkdir $@
