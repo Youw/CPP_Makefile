@@ -15,6 +15,6 @@ $(BUILD_DIR):
 	mkdir $@
 
 clean:
-	rm -rf $(BUILD_DIR) route_by_dns
+	rm -rf $(BUILD_DIR) $(OUTPUT_NAME)
 
 -include $(SOURCES:%.cpp=$(BUILD_DIR)%.d)
