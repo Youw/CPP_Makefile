@@ -1,5 +1,5 @@
 SOURCES=main.cpp some_class.cpp
-GXX_FLAGS=-O2 -pipe -MMD -MP
+GXX_FLAGS=-std=c++11 -O2 -pipe -MMD -MP
 BUILD_DIR=bin/
 OUTPUT_NAME=my_project_name
 
